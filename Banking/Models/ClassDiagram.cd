@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Banking.ContaCorrente">
+    <Position X="9" Y="3.75" Width="1.5" />
+    <Members>
+      <Method Name="Deposito" Hidden="true" />
+      <Method Name="Saque" Hidden="true" />
+      <Method Name="Transferencia" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAIAEQIAABAAAAAQAAACAEgCBECAYEAgAAAEA=</HashCode>
+      <FileName>Models\ContaCorrente.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Emprestimo" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Banking.Pessoa">
+    <Position X="6.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Models\Pessoa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Banking.Movimentacao">
+    <Position X="6.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAABAAAAAAIAAAQAAAAAAAAAABAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Models\Movimentacao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Banking.ContaContabilInvestimento">
+    <Position X="12" Y="5.5" Width="1.5" />
+    <Members>
+      <Property Name="Banco" Hidden="true" />
+      <Method Name="ChecaSaldo" Hidden="true" />
+      <Method Name="Deposito" Hidden="true" />
+      <Property Name="Id" Hidden="true" />
+      <Method Name="Saque" Hidden="true" />
+      <Method Name="Transferencia" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAEAAAAAAAAAAAAAAAgAACBEAAIAAAAAAAA=</HashCode>
+      <FileName>Models\ContaContabilInvestimento.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Banco" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Banking.ContaContabilEmprestimo">
+    <Position X="12" Y="4.5" Width="1.5" />
+    <Members>
+      <Property Name="Banco" Hidden="true" />
+      <Method Name="ChecaSaldo" Hidden="true" />
+      <Method Name="Deposito" Hidden="true" />
+      <Property Name="Id" Hidden="true" />
+      <Method Name="Saque" Hidden="true" />
+      <Method Name="Transferencia" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAEAAAAAAAAAAAAAAAgAACBEAAIAAAAAAAA=</HashCode>
+      <FileName>Models\ContaContabilEmprestimo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Banking.Emprestimo">
+    <Position X="12" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAABQAAAAEAAABAAAAAAgAAgAAAA=</HashCode>
+      <FileName>Models\Emprestimo.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ContaContabilEmprestimo" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Banking.Investimento">
+    <Position X="12" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABCgAAAAAAAAAAAAAAAAAAQAABABAAAAAAgAAgAAAA=</HashCode>
+      <FileName>Models\Investimento.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ContaContabilInvestimento" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Banking.Banco">
+    <Position X="15.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Models\Banco.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Banking.IConta">
+    <Position X="9" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAACBEAAAAAAAAAAA=</HashCode>
+      <FileName>Models\IConta.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
